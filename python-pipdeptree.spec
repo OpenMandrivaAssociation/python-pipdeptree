@@ -1,6 +1,6 @@
 Name:		python-pipdeptree
 Version:	2.28.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/p/pipdeptree/pipdeptree-%{version}.tar.gz
 Summary:	Command line utility to show dependency tree of packages.
 URL:		https://pypi.org/project/pipdeptree/
