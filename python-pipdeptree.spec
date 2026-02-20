@@ -20,6 +20,10 @@ BuildArch:	noarch
 %description
 Command line utility to show dependency tree of packages.
 
+%prep -a
+# relax lower bound for python-packaging until we have upgraded it.
+sed -i 's/packaging>=26/packaging>=25/g' pyproject.toml
+
 %files
 %{_bindir}/%{module}
 %{py_sitedir}/%{module}
