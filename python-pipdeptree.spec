@@ -1,7 +1,7 @@
 %define module pipdeptree
 
 Name:		python-pipdeptree
-Version:	2.30.0
+Version:	2.31.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Summary:	Command line utility to show dependency tree of packages.
