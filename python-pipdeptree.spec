@@ -1,7 +1,7 @@
 %define module pipdeptree
 
 Name:		python-pipdeptree
-Version:	2.35.0
+Version:	2.35.1
 Release:	1
 Summary:	Command line utility to show dependency tree of packages.
 License:	MIT
