@@ -1,7 +1,7 @@
 %define module pipdeptree
 
 Name:		python-pipdeptree
-Version:	2.35.1
+Version:	2.35.2
 Release:	1
 Summary:	Command line utility to show dependency tree of packages.
 License:	MIT
@@ -20,9 +20,9 @@ BuildArch:	noarch
 %description
 Command line utility to show dependency tree of packages.
 
-%prep -a
+#%%prep -a
 # relax lower bound for python-packaging until we have upgraded it.
-sed -i 's/packaging>=26/packaging>=25/g' pyproject.toml
+#sed -i 's/packaging>=26/packaging>=25/g' pyproject.toml
 
 %files
 %doc README.md
