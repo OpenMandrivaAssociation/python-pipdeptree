@@ -2,7 +2,7 @@
 
 Name:		python-pipdeptree
 Version:	4.1.0
-Release:	1
+Release:	2
 Summary:	Command line utility to show dependency tree of packages.
 License:	MIT
 Group:		Development/Python
@@ -19,6 +19,10 @@ BuildArch:	noarch
 
 %description
 Command line utility to show dependency tree of packages.
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %doc README.md
