@@ -1,2 +1,3 @@
 sources:
-  python-pipdeptree-3.1.0.tar.gz: fc753b088de87212dd411cc275cb2439165ca7cc
+  python-pipdeptree-4.2.8.tar.gz: e9215271a042560383bf9dfdf4f4268bd6e5239d
+  python-pipdeptree-4.2.8-vendor.tar.xz: 5321d904014ebdc2e669872f21f82c25b37f9e78
