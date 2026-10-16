@@ -1,7 +1,7 @@
 %define module pipdeptree
 
 Name:		python-pipdeptree
-Version:	4.1.0
+Version:	3.1.0
 Release:	2
 Summary:	Command line utility to show dependency tree of packages.
 License:	MIT
@@ -19,6 +19,8 @@ BuildArch:	noarch
 
 %description
 Command line utility to show dependency tree of packages.
+4.x requires the unpackaged nab stack. The optional from-index
+extra is not built.
 
 %build -p
 # The sdist is not a git checkout, so the versioning backend needs the version.
