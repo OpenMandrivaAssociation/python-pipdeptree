@@ -1,3 +1,7 @@
+# The Rust extension's DWARF points at the cargo target tree.
+# find-debuginfo splits the .debug file and then records no sources.
+%undefine _debugsource_packages
+
 %define module pipdeptree
 
 Name:		python-pipdeptree
