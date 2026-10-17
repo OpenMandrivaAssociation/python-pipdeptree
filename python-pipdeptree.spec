@@ -38,7 +38,8 @@ directory = "$PWD/vendor"
 EOF
 # Cooker rustc is 1.98. The crate asks for 1.99, and 4.2.8 builds on 1.98.
 sed -i 's/rust-version = "1.99"/rust-version = "1.85"/' Cargo.toml
-rm -f rust-toolchain.toml
+# meson.build lists rust-toolchain.toml as a cargo input. System cargo
+# ignores that rustup pin, so leave the file in place.
 
 %build -p
 export CARGO_HOME=$PWD/.cargo
